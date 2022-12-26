@@ -55,8 +55,8 @@ public class Attack {
 					DEnemy.win();
 				}
 			}else {
-				DEnemy.pokeaviable -= 1;
-				if(DEnemy.pokeAviable == 0) {
+				DEnemy.setPokeAviable(DEnemy.getPokeAviable() - 1);
+				if(DEnemy.getPokeAviable() == 0) {
 					DEnemy.lose();
 				}
 			}

@@ -97,8 +97,8 @@ public class PocketMonsters {
 	
 	public int boost() {
 		int boost;
-		if(Dresseur.insigne < 4) {
-			return boost = Dresseur.insigne / 10 + 1;
+		if(Dresseur.getInsigne() < 4) {
+			return boost = Dresseur.getInsigne() / 10 + 1;
 		}else {
 			return boost = 15 / 10;
 		}
